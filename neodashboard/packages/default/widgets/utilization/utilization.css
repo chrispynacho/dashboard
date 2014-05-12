@@ -31,7 +31,7 @@ img {
   height: 2em;  /* Can be anything */
   position: relative;
   margin: 60px 0 20px 0; /* Just for demo spacing */
-  background: white;
+  background: #bbb;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -55,7 +55,7 @@ img {
        -moz-border-radius-bottomleft: 20px;
               border-top-left-radius: 20px;
            border-bottom-left-radius: 20px;
-  background-color: #64e594;
+  background-color: #553CAF;
   position: relative;
   overflow: hidden;
 }
