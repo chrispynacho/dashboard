@@ -9,25 +9,38 @@ widget = {
         if (!data.events || !data.events.length) {
             $('.content', el).append($("<div>").html("No events found."));
         } else {
-            
-            this.log (data.events.length + ' calendar events found!'); 
 
-            data.events.forEach(function (event) {
+            data.events.forEach(function (event, i) {
                 var eventDiv = $("<div/>").addClass('event');
 				var dateInfo = $("<div/>").addClass('date').append('<div class="day-of-week">' + event.dayOfWeek + '</div>' + event.date);
                 var eventInfo = $("<div/>").addClass('event-info')
 					.append('<div class="event-time">' + event.time + '</div>' + '<div class="event-summary">' + event.summary + '</div>');
 				var eventImages = $("<div/>").addClass('event-images');
 
-
+                if (i == 0) {
+                    insertMug(eventImages, 'alexa')
+                    // heather doesn't have a photo from sf
+                } else if (i == 2) {
+                    insertMug(eventImages, 'shanley')
+                    insertMug(eventImages, 'alexa')
+                } else if (i == 3) {
+                    insertMug(eventImages, 'shanley')
+                    insertMug(eventImages, 'alexa')
+                    insertMug(eventImages, 'dtrejo')
+                    insertMug(eventImages, 'long')
+                }
 
                 $(eventDiv).append(dateInfo);
 				$(eventDiv).append(eventInfo);
-				$(eventDiv).append(eventImages);
-				
+				eventInfo.append(eventImages);
 
                 $('.content', el).append(eventDiv);
             });
         }
     }
+};
+
+function insertMug(div, name) {
+    var img = $('<img>').attr('src', '/images/' + name + '.jpg').attr('alt', name)
+    div.append(img)
 };
