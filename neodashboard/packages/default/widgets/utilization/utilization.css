@@ -4,15 +4,19 @@
 }
 .icons span {
   position: absolute;
+  margin-right: 2px solid black;
 }
 .icons img {
   float: right;
 }
 
 img {
-  height: 40px;
-  width:  40px;
-  color: #f00;
+  height: 50px;
+  width:  50px;
+}
+.rock img {
+  height: 60px;
+  width: 60px;
 }
 
 .meter .marker {
@@ -21,19 +25,21 @@ img {
   top: 0;
   left: -.125em; /* centers the marker on the number */
   border-right: .25em solid #e5e0e2;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* css 3 progress bar*/
 
 .meter {
-  height: 3em;  /* Can be anything */
+  height: 2em;  /* Can be anything */
   position: relative;
   margin: 60px 0 20px 0; /* Just for demo spacing */
   background: white;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  padding: 10px;
+  padding: 3px;
   -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
   box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
