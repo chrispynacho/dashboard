@@ -14,17 +14,13 @@ img {
   height: 50px;
   width:  50px;
 }
-.rock img {
-  height: 60px;
-  width: 60px;
-}
 
 .meter .marker {
   height: 100%;
   position: absolute;
   top: 0;
   left: -.125em; /* centers the marker on the number */
-  border-right: .25em solid #e5e0e2;
+  border-right: .25em solid rgba(0,0,0, .25);
   padding-top: 10px;
   padding-bottom: 10px;
 }
