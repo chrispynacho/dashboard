@@ -12,11 +12,11 @@ body{background:#181818;font-family:'Lato', sans-serif;overflow:hidden}
 #main-container.disconnected{opacity:.3;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);filter:alpha(opacity=30)}
 #main-container #dashboard-list{width:100%;}
 #main-container #dashboard-list ul{list-style:none;padding:0}
-#main-container #dashboard-list li{background:#0f0f0f;padding:15px;margin:15px;-webkit-border-radius:3.75px;border-radius:3.75px;-webkit-box-shadow:0 0 5px #111;box-shadow:0 0 5px #111;overflow:hidden;float:left;width:23%;font-size:2em;}
+#main-container #dashboard-list li{background:#0f0f0f;padding:15px;margin:15px;-webkit-box-shadow:0 0 5px #111;box-shadow:0 0 5px #111;overflow:hidden;float:left;width:23%;font-size:2em;}
 #main-container #dashboard-list li a{text-decoration:none;}
 #main-container #widgets-container{clear:both;}
 #main-container #widgets-container > ul{list-style:none;padding:0;}
-#main-container #widgets-container > ul > li{background:#0f0f0f;padding:15px;-webkit-border-radius:3.75px;border-radius:3.75px;-webkit-box-shadow:0 0 5px #111;box-shadow:0 0 5px #111;overflow:hidden;}
+#main-container #widgets-container > ul > li{background:#0f0f0f;padding:15px;-webkit-box-shadow:0 0 5px #111;box-shadow:0 0 5px #111;overflow:hidden;}
 #main-container #widgets-container > ul > li.editing{z-index:32767;-webkit-box-shadow:0 0 15px #333;box-shadow:0 0 15px #333}
 #main-container #widgets-container > ul > li:hover .edit{display:block}
 #main-container #widgets-container > ul > li .content.offline,#main-container #widgets-container > ul > li .content.onerror{opacity:.2;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20);filter:alpha(opacity=20)}
@@ -38,7 +38,7 @@ body {
 }
 #main-container #widgets-container > ul > li {
   background: #141414;
-  border: 2px solid #343434;
+  /*border: 2px solid #343434;*/
 }
 
 h2 {
