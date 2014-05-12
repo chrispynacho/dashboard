@@ -1,3 +1,33 @@
+.event {
+	font-size: 36px;
+}
+.event > div {
+	display: inline-block;
+}
+.event .date {
+	text-align: center;
+	font-size: 60px;
+}
+
+.event .date .day-of-week {
+	text-transform: lowercase;
+	font-size: 40px;
+}
+
+.event-info {
+	background-color: white;
+	
+}
+
+.event-time {
+	font-size: 12px;
+}
+
+.event-summary {
+}
+
+
+
 .leave-dates, .leave-summary {
     display: inline-block;
     overflow: hidden;

@@ -1,16 +1,22 @@
 var ical = require('ical'),
-    _ = require('underscore');
+    _ = require('underscore'),
+	moment = require('moment');
 
 module.exports = function(config, dependencies, job_callback) {
     var maxEntries = config.maxEntries;
     var logger = dependencies.logger;
     var formatDate = function(date) {
+		
         var d = date.getDate();
         var m = date.getMonth()+1;
+		
         return '' + (m<=9?'0'+m:m) + '/' + (d<=9?'0'+d:d);
     };
 
     ical.fromURL(config.calendarUrl, {}, function(err, data){
+		console.log('ical data', data);
+		
+		//TODO: get data into widget
 
         if (err){
             logger.error(err);
@@ -26,10 +32,19 @@ module.exports = function(config, dependencies, job_callback) {
         events.forEach(function(event) {
             if (counter < maxEntries) {
                 counter++;
-                result.push({startDate: formatDate(event.start), endDate: formatDate(event.end), summary: event.summary});
+				var evt = {
+					month: moment(event.start).format('MMMM'),
+					date: moment(event.start).format('DD'),
+					dayOfWeek: moment(event.start).format('ddd'),
+					time: moment(event.start).format('h:mm:ss a'),
+					summary: event.summary
+				};
+                result.push(evt);
             }
         });
-
+		
+		//console.log('result', result);
+		
         job_callback(null, {events: result, title: config.widgetTitle});
     });
 };
