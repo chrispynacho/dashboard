@@ -3,10 +3,12 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
+	margin-bottom: 10px;
 }
 
 .caption, 
 .user {
+	padding: 10px 10px 0 10px;
 	font-size: 30px;
 }
 

@@ -21,7 +21,7 @@
 }
 
 .event-info {
-	background-color: white;
+	background-color: #181818;
 	padding: 10px;
 	width: 90%;
 	position: relative;
@@ -31,7 +31,7 @@
 }
 
 .event-info.at-neo {
-	border-left: 10px solid #64e594;
+	border-left: 10px solid #553caf;
 }
 
 .event-time {
@@ -52,8 +52,8 @@
 	top: 13px;
 }
 .event-images img {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 75px;
+  height: 75px;
+  /*border-radius: 25px;*/
   margin-right: 5px;
 }
