@@ -1,5 +1,4 @@
 var instagram = require('instagram-node-lib');
-var dash = require('lodash');
 
 instagram.set('client_id', process.env.IG_CLIENT_ID);
 instagram.set('client_secret', process.env.IG_CLIENT_SECRET);
