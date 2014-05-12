@@ -5,7 +5,7 @@
       "widgets" : [
           {"row" : 1, "col" : 1, "width" : 4, "height" : 4, "widget" : "calendar",     "job" : "google-calendar",     "config": "calendar-holidays"},
           {"row" : 1, "col" : 5, "width" : 2, "height" : 2, "widget" : "image",        "job" : "picture-of-the-day",  "config": "picture"},
-          {"row" : 1, "col" : 5, "width" : 2, "height" : 2, "widget" : "quotes",       "job" : "quotes",              "config": "quotes-famous"}
+          {"row" : 1, "col" : 5, "width" : 2, "height" : 2, "widget" : "utilization",  "job" : "t2utilization",       "config": "utilization"}
       ]
   },
 
@@ -24,21 +24,9 @@
         "url" : "http://photography.nationalgeographic.com/photography/photo-of-the-day"
      },
 
-     "quotes-famous": {
+     "utilization": {
         "interval" : 60000,
-        "widgetTitle" : "utilization Palceholder",
-        "quotes" : [
-            {"quote" : "It's not that I'm so smart, it's just that I stay with problems longer.", "author" : "Albert Einstein"},
-            {"quote" : "Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.", "author" : "William Shakespeare"},
-            {"quote" : "Software built on pride and love of subject is superior to software built for profit.", "author" : "Ravi Simhambhatla"},
-            {"quote" : "If developers’ pains are Java and .NET, the antidote is dynamic languages and frameworks.", "author" : "Jeffrey Hammond"},
-            {"quote" : "Software is like sex: it's better when it's free.", "author" : "Linus Torvalds"},
-            {"quote" : "People enjoy the interaction on the Internet, and the feeling of belonging to a group that does something interesting: that's how some software projects are born.", "author" : "Linus Torvalds"},
-            {"quote" : "The ultimate search engine would basically understand everything in the world, and it would always give you the right thing.", "author" : "Larry Page"},
-            {"quote" : "Mathematics is the queen of the sciences and number theory is the queen of mathematics.", "author" : "Carl Friedrich Gauss"},
-            {"quote" : "Computer science is no more about computers than astronomy is about telescopes.", "author" : "Edsger Dijkstra"}
-        ],
-        "limit" : 3
+        "widgetTitle" : "Utilization"
      }
 
   }
