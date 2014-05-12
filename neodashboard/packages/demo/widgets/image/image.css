@@ -4,3 +4,12 @@
     margin-left: auto;
     display: block;
 }
+
+.caption, 
+.user {
+	font-size: 30px;
+}
+
+.user {
+	color: #666;
+}

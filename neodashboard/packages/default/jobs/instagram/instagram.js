@@ -11,7 +11,8 @@ module.exports = function(config, dependencies, job_callback) {
 	
 	function tagCallback(data) {
 		var url = data[0].images.standard_resolution.url;
-		console.log('image url', url);
-		job_callback(null, {title: 'Instagram #' + config.tag, imageSrc: url});
+		var caption = data[0].caption;
+		
+		job_callback(null, {title: 'Instagram #' + config.tag, imageSrc: url, caption: caption});
 	};
 };
