@@ -1,6 +1,6 @@
 .icons {
   padding-top: 2em;
-  padding-bottom: .5em;
+  padding-bottom: 1em;
 }
 .icons span {
   position: absolute;
@@ -11,8 +11,8 @@
 }
 
 img {
-  height: 50px;
-  width:  50px;
+  height: 60px;
+  width:  60px;
 }
 
 .meter .marker {
