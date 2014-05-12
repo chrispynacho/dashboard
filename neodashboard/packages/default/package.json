@@ -1,0 +1,14 @@
+{
+  "name": "neodashboard",
+  "version": "0.0.1",
+  "description": "Neo Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "instagram-node-lib": "^0.1.1"
+  }
+}
