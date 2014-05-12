@@ -33,12 +33,12 @@ big;font-size:60px;font-weight:bold}
 .widget-title span.alert_high{color:#f00}
 
 body {
-  background: white;
-  color: #222;
+  background: black;
+  color: #ddd;
 }
 #main-container #widgets-container > ul > li {
-  background: #ebebeb;
-  border: 2px solid #dbdbdb;
+  background: #141414;
+  border: 2px solid #343434;
 }
 
 h2 {
