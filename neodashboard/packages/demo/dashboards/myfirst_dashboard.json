@@ -15,7 +15,7 @@
     "calendar-holidays" : {
        "interval" : 60000,
        "calendarUrl" : "http://www.google.com/calendar/ical/neo.com_jm3ba4ahl77t0f47602r85uhuo%40group.calendar.google.com/public/basic.ics",
-       "maxEntries" : 8,
+       "maxEntries" : 6,
        "widgetTitle" : "Neo Events"
      },
 
