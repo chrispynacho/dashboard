@@ -14,9 +14,7 @@ module.exports = function(config, dependencies, job_callback) {
     };
 
     ical.fromURL(config.calendarUrl, {}, function(err, data){
-		console.log('ical data', data);
-		
-		//TODO: get data into widget
+		//console.log('ical data', data);
 
         if (err){
             logger.error(err);
@@ -36,8 +34,9 @@ module.exports = function(config, dependencies, job_callback) {
 					month: moment(event.start).format('MMMM'),
 					date: moment(event.start).format('DD'),
 					dayOfWeek: moment(event.start).format('ddd'),
-					time: moment(event.start).format('h:mm:ss a'),
-					summary: event.summary
+					time: moment(event.start).format('h:mm a'),
+					summary: event.summary,
+					'location': event.location
 				};
                 result.push(evt);
             }

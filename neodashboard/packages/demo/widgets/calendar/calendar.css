@@ -3,53 +3,56 @@
 }
 .event > div {
 	display: inline-block;
+	clear: both;
+	height: 100px;
 }
 .event .date {
 	text-align: center;
 	font-size: 60px;
+	width: 5%;
+	float: left;
 }
 
 .event .date .day-of-week {
-	text-transform: lowercase;
-	font-size: 40px;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: -19px;
+	text-align: center;
 }
 
 .event-info {
 	background-color: white;
+	padding: 10px;
+	width: 90%;
+	position: relative;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	border-left: 10px solid gray;
+}
 
+.event-info.at-neo {
+	border-left: 10px solid #64e594;
 }
 
 .event-time {
-	font-size: 12px;
+	font-size: 20px;
 }
 
 .event-summary {
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .event-images {
-  float: right;
+	position: absolute;
+	right: 10px;
+	top: 13px;
 }
 .event-images img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-}
-
-.leave-dates, .leave-summary {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.leave-dates {
-    width: 35%;
-}
-
-.leave-summary {
-    width: 65%;
-}
-
-.leave-event {
-    font-size: 30px;
+  margin-right: 5px;
 }

@@ -9,13 +9,22 @@ widget = {
         if (!data.events || !data.events.length) {
             $('.content', el).append($("<div>").html("No events found."));
         } else {
-
+			
+			var prevDate = "";
             data.events.forEach(function (event, i) {
                 var eventDiv = $("<div/>").addClass('event');
-				var dateInfo = $("<div/>").addClass('date').append('<div class="day-of-week">' + event.dayOfWeek + '</div>' + event.date);
+				var dateInfo = $("<div/>").addClass('date');
+				if (event.date != prevDate) {
+					dateInfo.append('<div class="day-of-week">' + event.dayOfWeek + '</div>' + event.date);
+				}
+				prevDate = event.date;
                 var eventInfo = $("<div/>").addClass('event-info')
 					.append('<div class="event-time">' + event.time + '</div>' + '<div class="event-summary">' + event.summary + '</div>');
+				if (event.location.match(/Neo/)) {
+					eventInfo.addClass('at-neo');
+				}
 				var eventImages = $("<div/>").addClass('event-images');
+
 
                 if (i == 0) {
                     insertMug(eventImages, 'alexa')
@@ -32,8 +41,8 @@ widget = {
 
                 $(eventDiv).append(dateInfo);
 				$(eventDiv).append(eventInfo);
-				eventInfo.append(eventImages);
-
+				$(eventInfo).append(eventImages);
+				
                 $('.content', el).append(eventDiv);
             });
         }
